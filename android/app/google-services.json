@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1096621522866",
+    "project_id": "meeting-cell",
+    "storage_bucket": "meeting-cell.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096621522866:android:8c3be277f0e9138d49eeab",
+        "android_client_info": {
+          "package_name": "y.chanchal.co.in.meeting_cell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096621522866-n746rib01ilp5d2kqt30a2n2crpgfge2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "y.chanchal.co.in.meeting_cell",
+            "certificate_hash": "197aca2b9bb9e097ed7f393fc93eec92cef849e7"
+          }
+        },
+        {
+          "client_id": "1096621522866-5v0sdj3teseqfsgblud9vm7h9e6m18ls.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF7t4kK2U-OyDGaMZRdnfIdOORIaMEfyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1096621522866-5v0sdj3teseqfsgblud9vm7h9e6m18ls.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1096621522866-65sisevuep1ae3j07v570ja58aeciehj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "y.chanchal.co.in.meetingCell"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

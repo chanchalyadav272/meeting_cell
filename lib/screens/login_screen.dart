@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meeting_cell/resources/auth.dart';
 import 'package:meeting_cell/resources/button.dart';
 
 class Login extends StatefulWidget {
@@ -9,6 +10,8 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
+  final AuthMethods _authMethods = AuthMethods();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,8 +32,13 @@ class _LoginState extends State<Login> {
             fit: BoxFit.fill,)
           ),
     ),
-          CustomButton(text: 'Login',
-              onPressed: (){})
+          CustomButton(text: 'Google Sign In',
+              onPressed: ()  async{
+                bool signIn = await _authMethods.signInWithGoogle(context);
+                if(signIn){
+                  Navigator.pushNamed(context, '/home');
+                }
+              })
 
         ],
       ),
