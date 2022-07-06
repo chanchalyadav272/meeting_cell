@@ -34,7 +34,8 @@ dependencies:
   flutter:
     sdk: flutter
   google_sign_in: ^5.3.3
-  jitsi_meet: ^4.0.0
+  jitsi_meet_platform_interface: ^2.0.0
+  jitsi_meet_web_plugin: ^2.0.0
 
 dev_dependencies:
   flutter_lints: ^2.0.0
@@ -45,6 +46,15 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter packages.
 flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.gunschu.jitsi_meet
+        pluginClass: JitsiMeetPlugin
+      ios:
+        pluginClass: JitsiMeetPlugin
+      web:
+        default_package: jitsi_meet_web_plugin
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
